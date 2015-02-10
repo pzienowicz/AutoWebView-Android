@@ -6,6 +6,7 @@ So you bought new enormous TV and connected Raspberry PI (or other stuff with An
 
 1. Authentication,
 * Defined auto refresh,
+* Autostart after system rebooting,
 * Ability to scroll page after loading,
 * JS support.
 
