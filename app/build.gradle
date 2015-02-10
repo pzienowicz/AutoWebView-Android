@@ -19,6 +19,7 @@ android {
         buildConfigField "boolean", "ENABLE_JS", 'true'                 //enables js in webview
         buildConfigField "boolean", "ALLOW_FILE_ACCESS", 'true'         //allows file access in webview
         buildConfigField "boolean", "ENABLE_DEBUG_MODE", 'true'         //only for KitKat and higher
+        buildConfigField "boolean", "AUTO_START", 'true'                //auto start after system rebooting
         buildConfigField "long", "REFRESH_DELAY", '60000'               //first reload (in ms)
         buildConfigField "long", "REFRESH_PERIOD", '60000'              //next reloads (in ms)
         buildConfigField "int", "SCROLL_X", '200'                       //the amount of pixels to scroll by horizontally

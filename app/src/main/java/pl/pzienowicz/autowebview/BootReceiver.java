@@ -10,10 +10,12 @@ public class BootReceiver extends BroadcastReceiver {
 	public void onReceive(final Context context, final Intent intent) {
 
         if (intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)){
-            Intent i = new Intent(context, MainActivity.class);
-            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            if(BuildConfig.AUTO_START) {
+                Intent i = new Intent(context, MainActivity.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
-            context.startActivity(i);
+                context.startActivity(i);
+            }
         }
     }
 }
