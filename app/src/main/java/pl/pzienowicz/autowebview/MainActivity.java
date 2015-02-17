@@ -41,13 +41,8 @@ public class MainActivity extends Activity {
         webSettings.setAppCacheEnabled(true);
         webSettings.setDomStorageEnabled(true);
 
-        if(BuildConfig.ENABLE_JS) {
-            webSettings.setJavaScriptEnabled(true);
-        }
-
-        if(BuildConfig.ALLOW_FILE_ACCESS) {
-            webSettings.setAllowFileAccess(true);
-        }
+        webSettings.setJavaScriptEnabled(BuildConfig.ENABLE_JS);
+        webSettings.setAllowFileAccess(BuildConfig.ALLOW_FILE_ACCESS);
 
         if(BuildConfig.USE_AUTH) {
             myWebView.setHttpAuthUsernamePassword(BuildConfig.HOST, "", BuildConfig.USERNAME, BuildConfig.PASSWORD);
