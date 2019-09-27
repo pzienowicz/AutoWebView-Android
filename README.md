@@ -1,4 +1,4 @@
-##AutoWebView for TVs or other display devices
+## AutoWebView for TVs or other display devices
 
 So you bought new enormous TV and connected Raspberry PI (or other stuff with Android) to it... Now you wish to display some website or information panel, don't you? Here is a ready-to-use tool for displaying every website you wish.
 
